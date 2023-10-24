@@ -1,8 +1,9 @@
 "use client"
 
-import * as z from 'zod'
-import { zodResolver } from '@hookform/resolvers/zod'
-import { useForm } from 'react-hook-form'
+import * as z from 'zod';
+import { zodResolver } from '@hookform/resolvers/zod';
+import { useForm } from 'react-hook-form';
+import { useEffect, useState } from 'react';
 
 import {
     Dialog,
@@ -11,7 +12,7 @@ import {
     DialogFooter,
     DialogHeader,
     DialogTitle
-} from '@/components/ui/dialog'
+} from '@/components/ui/dialog';
 import {
     Form,
     FormControl,
@@ -19,10 +20,10 @@ import {
     FormItem,
     FormLabel,
     FormMessage
-} from '@/components/ui/form'
-import { Input } from '@/components/ui/input'
-import { Button } from '@/components/ui/button'
-import { useEffect, useState } from 'react'
+} from '@/components/ui/form';
+import { Input } from '@/components/ui/input';
+import { Button } from '@/components/ui/button';
+import { FileUpload } from '@/components/file-upload';
 
 const formSchema = z.object({
     name: z.string().min(1, {
@@ -31,7 +32,7 @@ const formSchema = z.object({
     imageUrl: z.string().min(1, {
         message: "Server image is required."
     })
-})
+});
 
 export const InitialModal = () => {
     const [isMounted, setIsMounted] = useState(false);
@@ -74,7 +75,21 @@ export const InitialModal = () => {
                     <form onSubmit={form.handleSubmit(onSubmit)} className='space-y-8'>
                         <div className='space-y-8 px-6'>
                             <div className='flex items-center justify-center text-center'>
-                                TODO: Image Upload
+                                <FormField 
+                                    control={form.control}
+                                    name="imageUrl"
+                                    render={({ field }) => (
+                                        <FormItem>
+                                            <FormControl>
+                                                <FileUpload 
+                                                    endpoint="serverImage"
+                                                    value={field.value}
+                                                    onChange={field.onChange}
+                                                />
+                                            </FormControl>
+                                        </FormItem>
+                                    )}
+                                />
                             </div>
                             <FormField 
                                 control={form.control}
