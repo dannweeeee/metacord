@@ -1,36 +1,70 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Metacord
 
-## Getting Started
+## Overview
 
-First, run the development server:
+A comprehensive Instant Messaging and VoIP Discord Clone built with Next.js 13, React, Socket.io, Prisma, TailwindCSS and MySQL.
+This project aims to replicate the key features of Discord while incorporating real-time messaging, multimedia support, member management, and various customisation options.<br>
+<br>
+**Visit the Deployed Railway Website at:** https://metacord.up.railway.app/
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+## Features
+
+- **Real-time Messaging:** Utilizing Socket.io for seamless real-time communication among users.
+- **Multimedia Support:** Send attachments as messages using UploadThing.
+- **Editing and Deleting:** Real-time editing and deleting of messages visible to all users.
+- **Voice and Video Channels:** Create text, audio, and video call channels for engaging conversations.
+- **1:1 Conversations:** Enable private one-on-one messaging between members.
+- **Video Calls:** Facilitate one-on-one video calls between members.
+- **Member Management:** Kick, change roles (Guest/Moderator), and manage members effectively.
+- **Invite System:** Generate unique invite links and implement a fully functional invite system.
+- **Infinite Loading:** Display messages in batches of 10 using @tanstack/query for smooth scrolling.
+- **Server Customization:** Allow users to create and customize their servers.
+- **UI Design:** Beautiful user interface using TailwindCSS and ShadcnUI.
+- **Responsivity:** Ensure a responsive design with full mobile UI support.
+- **Light/Dark Mode:** Implement a toggleable light and dark mode for user preference.
+- **Websocket Fallback:** Implement WebSocket fallback using polling with alerts.
+- **ORM with Prisma:** Utilize Prisma for Object-Relational Mapping for a seamless database experience.
+- **MySQL Database:** Store data in a MySQL database, leveraging Planetscale for efficient scaling.
+- **Authentication:** Secure user authentication with Clerk.
+
+## Technologies
+
+- **Next.js 13:** A React framework for building server-rendered applications.
+- **React:** A JavaScript library for building user interfaces.
+- **Socket.io:** Enables real-time, bidirectional, and event-based communication.
+- **Prisma:** A modern database toolkit that simplifies database access with type-safe queries.
+- **TailwindCSS:** A utility-first CSS framework for rapidly building custom designs.
+- **MySQL:** A popular relational database management system for data storage.
+- **Planetscale:** Provides a scalable and highly available database platform for MySQL.
+
+## Tools
+
+Tools that I used:
+
+- [**Clerk**](https://clerk.com/) - For Authentication, User Management and Webhooks
+- [**Shadcn**](https://ui.shadcn.com/) - For Accessible, Open Source User Interface Components
+- [**Uploadthing**](https://uploadthing.com/) - For File Uploads (Mainly Image)
+- [**LiveKit**](https://livekit.io/) - For Audio and Video Calls
+- [**Zod**](https://zod.dev/) - For schema declaration and validation library (Avoided Duplicates especially for Multithreading Feature)
+
+## Installation
+
+Clone the repository
+
+```
+git clone https://github.com/dannweeeee/metacord.git
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Deployment
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+First install the dependencies with the following command:
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+```
+npm install
+```
 
-## Learn More
+Thereafter run the following command to run Metacord locally:
 
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+```
+npm run dev
+```
