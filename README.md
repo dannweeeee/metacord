@@ -1,5 +1,7 @@
 # Metacord
 
+<img width="1440" alt="Screenshot 2023-11-02 at 12 45 28 PM" src="https://github.com/dannweeeee/metacord/assets/42776950/c60ac749-f48b-442f-9715-a35da2550a9d">
+
 ## Overview
 
 A comprehensive Instant Messaging and VoIP Discord Clone built with Next.js 13, React, Socket.io, Prisma, TailwindCSS and MySQL.
