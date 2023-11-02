@@ -1,6 +1,6 @@
 # Metacord
 
-<img width="1440" alt="Screenshot 2023-11-02 at 12 45 28 PM" src="https://github.com/dannweeeee/metacord/assets/42776950/c60ac749-f48b-442f-9715-a35da2550a9d">
+<img width="1440" alt="Screenshot 2023-11-02 at 12 57 59 PM" src="https://github.com/dannweeeee/metacord/assets/42776950/7c605088-19d9-431d-820b-0e828be5da9e">
 
 ## Overview
 
