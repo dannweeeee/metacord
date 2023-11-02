@@ -4,8 +4,8 @@
 
 ## Overview
 
-A comprehensive Instant Messaging and VoIP Discord Clone built with Next.js 13, React, Socket.io, Prisma, TailwindCSS and MySQL.
-This project aims to replicate the key features of Discord while incorporating real-time messaging, multimedia support, member management, and various customisation options.<br>
+Metacord is an Instant Messaging and VoIP Discord Clone built with Next.js 13, React, Socket.io, Prisma, TailwindCSS and MySQL.
+Powered by an extensive tech stack including React, Socket.io, Prisma, TailwindCSS and MySQL. <br>
 <br>
 **Visit the Deployed Railway Website at:** https://metacord.up.railway.app/
 
